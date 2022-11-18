@@ -1,0 +1,1684 @@
+<hazelcast 
+	xmlns="http://www.hazelcast.com/schema/config"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.hazelcast.com/schema/config
+	http://www.hazelcast.com/schema/config/hazelcast-config-3.12.xsd">
+
+     <map name="MATERIAL_PRICE_FROM_SP">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">200000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="MATERIAL_SERVICE_FROM_SP">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="SHOP_BY_SHOP_NUMBER">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="EMPLOYEE_SESSION">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="SERVICES_FOR_MATERIAL_FROM_SP_NEW">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">1000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>10000</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="SERVICES_WITHOUT_MATERIAL_FROM_SP">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="SERVICES_FOR_MATERIAL_FROM_SP">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="CLIENT_SESSION">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="CLIENT_SESSION_WITHOUT_EMPLOYEE">
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <read-backup-data>true</read-backup-data>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>600</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+     </map>
+     <map name="HANDOVER_OPTIONS">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="MATERIAL_CARD_FROM_SP">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">20000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="SRF_DICTIONARY">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="OPERATORS">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="TARIFFS">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="MATERIAL_HANDOVER_OBJECT_AVAILABILITY">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>180</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">50000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="MATERIAL_LABELS">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="SELLING_RULE">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="SELLING_RULE_V*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="FEDERAL_ACTIONS_PROMO_LIST">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="FEDERAL_ACTIONS_WITH_DETAILS">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">250000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="PREFERRED_INST_NAME_BY_SKU">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">250000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="INST_INTERSECTION">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">250000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="MATERIAL_SERVICES_AVAILABILITY">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">30000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="CONFLICTING_PROMOS">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">1000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="PROMO_INFO">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>604800</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">200</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+	 <map name="map.discount.promotion.id-type.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>86400</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">1000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+          <near-cache>
+               <time-to-live-seconds>86400</time-to-live-seconds>
+               <max-idle-seconds>0</max-idle-seconds>
+               <eviction size="1000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.discount.promotion.promoId-typeId.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">250000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+          <near-cache>
+               <time-to-live-seconds>1800</time-to-live-seconds>
+               <max-idle-seconds>0</max-idle-seconds>
+               <eviction size="10000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+	 <map name="map.discount.promotion.details.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>86400</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">1000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+          <near-cache>
+               <time-to-live-seconds>86400</time-to-live-seconds>
+               <max-idle-seconds>0</max-idle-seconds>
+               <eviction size="1000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.discount.promo-group.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>86400</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">1000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+          <near-cache>
+               <time-to-live-seconds>86400</time-to-live-seconds>
+               <max-idle-seconds>0</max-idle-seconds>
+               <eviction size="1000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.discount.promo-type.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>86400</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">100</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+          <near-cache>
+               <time-to-live-seconds>86400</time-to-live-seconds>
+               <max-idle-seconds>0</max-idle-seconds>
+               <eviction size="1000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.discount.promotion-details-by-type.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>86400</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">100</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+          <near-cache>
+               <time-to-live-seconds>86400</time-to-live-seconds>
+               <max-idle-seconds>0</max-idle-seconds>
+               <eviction size="1000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.discount.promotion-by-type.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>86400</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">100</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+          <near-cache>
+               <time-to-live-seconds>86400</time-to-live-seconds>
+               <max-idle-seconds>0</max-idle-seconds>
+               <eviction size="1000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.discount.get-suitable-promotions.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">10000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.discount.promo-info.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">10000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.discount.conflicting-promos.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">10000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.discount.federal-actions-promo-list.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">10000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.discount.inst-intersection.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">10000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.discount.preferred-inst-name-by-sku.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>43200</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">250000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.discount.promotion.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">10000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+	   <near-cache>
+			<time-to-live-seconds>21600</time-to-live-seconds>
+            <max-idle-seconds>0</max-idle-seconds>
+            <eviction size="2000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+       </near-cache>
+     </map>
+     <map name="BPG_OFFERS">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">2000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.gifts.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">2000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.material-labels.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.bpg-offers.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">2000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.material-accessories.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">20000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.material-promo.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.material-services.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.material-federal-bundles.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.material-thematic-bundles.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.material-details.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.material-card.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">20000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.material-availability.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>180</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">50000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="product-api.material-price.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">20000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="delivery-api.delivery-attributes.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>86400</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.client.client-main-info.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>10800</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.client.client-shared-lists.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>1800</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.*.client-session.v1">
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <read-backup-data>false</read-backup-data>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>600</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <near-cache>
+               <time-to-live-seconds>600</time-to-live-seconds>
+               <max-idle-seconds>60</max-idle-seconds>
+               <eviction size="2000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.*.client-session.v2">
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <read-backup-data>true</read-backup-data>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>600</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <near-cache>
+               <time-to-live-seconds>600</time-to-live-seconds>
+               <max-idle-seconds>60</max-idle-seconds>
+               <eviction size="2000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.*.client-session.v3">
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <read-backup-data>true</read-backup-data>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>600</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <near-cache>
+               <time-to-live-seconds>600</time-to-live-seconds>
+               <max-idle-seconds>60</max-idle-seconds>
+               <eviction size="2000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.*.employee-session.v1">
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <read-backup-data>true</read-backup-data>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>600</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <near-cache>
+               <time-to-live-seconds>600</time-to-live-seconds>
+               <max-idle-seconds>60</max-idle-seconds>
+               <eviction size="2000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.*.employee-session.v2">
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <read-backup-data>true</read-backup-data>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>600</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <near-cache>
+               <time-to-live-seconds>600</time-to-live-seconds>
+               <max-idle-seconds>60</max-idle-seconds>
+               <eviction size="2000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.*.employee-session.v3">
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <read-backup-data>true</read-backup-data>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>600</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <near-cache>
+               <time-to-live-seconds>600</time-to-live-seconds>
+               <max-idle-seconds>60</max-idle-seconds>
+               <eviction size="2000" max-size-policy="ENTRY_COUNT" eviction-policy="LRU"/>
+          </near-cache>
+     </map>
+     <map name="map.discount.federal-promotions.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.discount.gifts.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.handover-options.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">5000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.material-handover-object-availability.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>180</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">50000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.material-services-availability.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>3600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">50000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.material-card-from-sp.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">20000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.material-price-from-sp.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>3600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">200000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.material-service-from-sp.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>3600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">10000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.selling-rule.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">5000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.services-for-material-from-sp.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>3600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">10000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.services-for-material-from-sp-new.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>3600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">1000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>10000</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.services-without-material-from-sp.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>3600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">10000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.federal-actions-with-details.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">250000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.material-labels.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">5000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+	 <map name="map.catalogue.material-rating.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">250000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+	 <map name="map.catalogue.material-rating-full.v*">
+       <in-memory-format>BINARY</in-memory-format>
+       <statistics-enabled>true</statistics-enabled>
+       <optimize-queries>false</optimize-queries>
+       <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+       <backup-count>0</backup-count>
+       <async-backup-count>1</async-backup-count>
+       <time-to-live-seconds>21600</time-to-live-seconds>
+       <max-idle-seconds>0</max-idle-seconds>
+       <eviction-policy>LRU</eviction-policy>
+       <max-size policy="PER_NODE">2000</max-size>
+       <eviction-percentage>25</eviction-percentage>
+       <min-eviction-check-millis>100</min-eviction-check-millis>
+       <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+       <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.orgstruct.shop-by-shop-number.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.orgstruct.shop-info-dto.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.bpg.bpg-offers.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">2000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.product-api.bpg-offers.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">2000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.product-api.material-accessories.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">20000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.product-api.material-promo.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.product-api.gifts.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">2000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.product-api.material-labels.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.product-api.material-federal-bundles.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.product-api.material-thematic-bundles.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.product-api.material-details.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.product-api.material-services.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.product-api.material-availability.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>180</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">50000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.product-api.material-price.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">20000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+	 <map name="map.product-api.material-rating.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">20000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+	 <map name="map.product-api.service-preorder.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>3600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">20000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.delivery-api.delivery-attributes.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>86400</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.srf.srf-dictionary.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.srf.operators-cache.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.srf.tariffs.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.srf.operator-id-to-uid.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+	 <map name="map.srf.operator-uid-to-id.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.srf.tariff-id-to-uid.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+	 <map name="map.srf.tariff-uid-to-id.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">5000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.catalogue.tp-preorder-flags.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+	 <map name="map.catalogue.promo-pages.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+	 <map name="map.product-api.promo-pages.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+     <map name="map.security.tp-token.v*">
+          <in-memory-format>BINARY</in-memory-format>
+          <statistics-enabled>true</statistics-enabled>
+          <optimize-queries>false</optimize-queries>
+          <cache-deserialized-values>INDEX-ONLY</cache-deserialized-values>
+          <backup-count>0</backup-count>
+          <async-backup-count>1</async-backup-count>
+          <time-to-live-seconds>21600</time-to-live-seconds>
+          <max-idle-seconds>0</max-idle-seconds>
+          <eviction-policy>LRU</eviction-policy>
+          <max-size policy="PER_NODE">10000</max-size>
+          <eviction-percentage>25</eviction-percentage>
+          <min-eviction-check-millis>100</min-eviction-check-millis>
+          <merge-policy>com.hazelcast.map.merge.PutIfAbsentMapMergePolicy</merge-policy>
+          <read-backup-data>true</read-backup-data>
+     </map>
+</hazelcast>
